@@ -1,0 +1,69 @@
+package abc;
+
+public class vehicle
+{
+
+	protected String fuel;
+    protected String use;
+    protected String madeIn;
+
+    static class hondaAccordCar extends vehicle
+    {
+        void sethondaAccordCar(String newfuel)
+        {
+        	this.fuel=newfuel;
+        }
+        void  getHondaAccordCar()
+        {
+        	System.out.println("Honda accord car runs on fuel called "+fuel);
+        }
+    }
+      
+    static class  DucatiBike extends vehicle
+    {
+
+    	void  setDucatiBike(String newFuel,String uses,String imported)
+    	{
+    		this.fuel= newFuel;
+    		this.use=uses;
+    		this.madeIn=imported;
+    	}
+    	void getDucatiBike()
+    	{
+    		System.out.println("Ducati runs on fuel called "+fuel);
+    		System.out.println("Ducati is "+use+" and "+madeIn+" vehicle");
+    	}
+    }
+ 
+    static class hondaAccordCar2 extends vehicle
+    {
+    	void sethondaAccordCar2(String uses,String MadeIn)
+    	{
+    		this.use= uses;
+    		this.madeIn=MadeIn;
+    	}
+    	void  getHondaAccordCar2()
+    	{
+    		System.out.println("Honda accord is "+use+" and "+madeIn+" in India");
+    	}
+    }
+
+    public static void main(String[] args)
+    {
+    	Sourabh p = new Sourabh();
+    	p.setSourabhDetails("Sourabh","two","honda accord car","Ducati Bike");
+        p.getSourabhDetails();
+
+        hondaAccordCar h = new hondaAccordCar();
+        h.sethondaAccordCar("diesel");
+        h.getHondaAccordCar();
+
+        DucatiBike d = new DucatiBike();
+        d.setDucatiBike("petrol","used","imported");
+        d.getDucatiBike();
+        
+        hondaAccordCar2 h2 = new hondaAccordCar2();
+        h2.sethondaAccordCar2("new","made");
+        h2.getHondaAccordCar2();
+    }
+}
