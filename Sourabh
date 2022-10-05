@@ -2,20 +2,19 @@ package abc;
 
 public class Sourabh
 {
-
-	   private String name;
-	   private  String NumberOfVehicle;
-	   private String v1;
-	   private  String v2;
-	   void setSourabhDetails(String newName,String NumberOfVehicle,String v1,String v2)
-	   {
-	      this.name=newName;
-	      this.NumberOfVehicle=NumberOfVehicle;
-	      this.v1=v1;
-	      this.v2=v2;
-	   }
-	   void getSourabhDetails()
-	   {
-          System.out.println(name+" has "+NumberOfVehicle+" vehicle, one is "+v1+" and another is "+v2 );
-       }
+	private String name;
+	private  String NumberOfVehicle;
+	private String v1;
+	private  String v2;
+	void setSourabhDetails(String newName,String NumberOfVehicle,String v1,String v2)
+	{
+		this.name=newName;
+		this.NumberOfVehicle=NumberOfVehicle;
+		this.v1=v1;
+		this.v2=v2;
+	}
+	void getSourabhDetails()
+	{
+		System.out.println(name+" has "+NumberOfVehicle+" vehicle, one is "+v1+" and another is "+v2 );
+    }	
 }
